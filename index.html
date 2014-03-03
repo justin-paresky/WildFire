@@ -1,0 +1,182 @@
+<!doctype html>
+<!--[if lt IE 7]> <html class="no-js lt-ie9 lt-ie8 lt-ie7" lang="en"> <![endif]-->
+<!--[if IE 7]>    <html class="no-js lt-ie9 lt-ie8" lang="en"> <![endif]-->
+<!--[if IE 8]>    <html class="no-js lt-ie9" lang="en"> <![endif]-->
+<!-- Consider adding a manifest.appcache: h5bp.com/d/Offline -->
+<!--[if gt IE 8]><!--> <html class="no-js" lang="en"> <!--<![endif]-->
+<head>
+  <meta charset="utf-8">
+  <meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1">
+  <title>Wildfire</title>
+  <meta name="description" content="">
+  <meta name="viewport" content="width=device-width">
+  <link rel="stylesheet" href="css/bootstrap.min.css">
+  <link rel="stylesheet" href="css/datepicker.css">
+  <link rel="stylesheet" href="css/style.css">
+  <script src="js/libs/modernizr-2.5.3.min.js"></script>
+</head>
+<body>
+  <!-- Prompt IE 6 users to install Chrome Frame. Remove this if you support IE 6.
+       chromium.org/developers/how-tos/chrome-frame-getting-started -->
+  <!--[if lt IE 7]><p class=chromeframe>Your browser is <em>ancient!</em> <a href="http://browsehappy.com/">Upgrade to a different browser</a> or <a href="http://www.google.com/chromeframe/?redirect=true">install Google Chrome Frame</a> to experience this site.</p><![endif]-->
+  <div class="wrapper">
+    <div class="content">
+      <nav class="navbar navbar-default container" role="navigation">
+        <div class="container">
+          <a class="navbar-brand pulsor-text" href="#">WildFire</a>
+          <ul class="nav navbar-nav">
+            <li class="dropdown active">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="genInfo">General Info</a>
+              <ul class="dropdown-menu gen-info">
+                <li id="genInfoContent"></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="workShops">Workshops</a>
+              <ul class="dropdown-menu workshops">
+                <li id="workShopsContent"></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="volunteer">Volunteer</a>
+              <ul class="dropdown-menu volunteer">
+                <li id="volunteerContent"></li>
+              </ul>
+            </li>
+            <li class="dropdown">
+              <a href="#" class="dropdown-toggle" data-toggle="dropdown" id="tickets">Tickets</a>
+              <ul class="dropdown-menu tickets pull-right">
+                <li id="ticketsContent"></li>
+              </ul>
+            </li>
+          </ul>
+          <div class="pull-right help-links">
+            <ul class="top-links">
+              <li><a href="#">Facebook Forum</a></li>
+              <li>|</li>
+              <li><a href="#">Help</a></li>
+            </ul>
+          </div>
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="#">Your Account</a></li>
+          </ul>
+        </div>
+      </nav>
+      <div class="body-content container">
+        <div class="row">
+          <div class="col-xs-8">
+            <h2><strong>May Tickets on sale – March 31st 12am</strong></h2>
+            <h3 id="countDown"></h3>
+          </div>
+          <div class="col-xs-4">
+            <div class="log-in">
+              <div class="log-in-head">
+                <h1>Sign In</h1>
+                <span class="log-in-create"><a href="#">Creat an account</a></span>
+              </div>
+              <div class="log-in-body">
+                <form role="form" id="logIn">
+                  <div class="form-group">
+                    <label for="userName">Username or Email</label>
+                    <input type="text" class="form-control" id="userName" placeholder="Username or Email">
+                  </div>
+                  <div class="form-group">
+                    <label for="password">Password</label>
+                    <input type="text" class="form-control" id="password" placeholder="Password">
+                  </div>
+                  <a href="#" class="forgot">Forgot your password?</a>
+                  <button type="submit" class="btn btn-primary">Sign In</button>
+                </form>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <div class="push"></div>
+  </div>
+  <div class="footer1 container">
+    <div class="col-xs-3">
+      <div class="footer-info" id="footerInfo1">
+        <div id="footerInfo1Con">
+          <a class="new-line" href="#">Vendor applications</a>
+          Lorem ipsum
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="footer-info" id="footerInfo2">
+        <div id="footerInfo2Con">
+          <a class="new-line" href="#">Event schedule</a>
+          Lorem ipsum
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3">
+      <div class="footer-info" id="footerInfo3">
+        <div id="footerInfo3Con">
+          <span class="bold">May Tickets - Sold Out</span>
+          <a class="new-line" href="#">Wait list signup</a>
+        </div>
+      </div>
+    </div>
+    <div class="col-xs-3 last-col">
+      <div class="footer-info" id="footerInfo4">
+        <div id="footerInfo4Con">
+          <span class="bold">May Tickets - Sold Out</span>
+          <a class="new-line" href="#">Wait list signup</a>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer2 container">
+    <div class="quick-launch">
+      <div class="quick-header">Quick Launch Links</div>
+      <div class="quick-body">
+        <div class="col-xs-3">
+          <span class="new-line bold">General Info</span>
+          <a href="#" class="new-line">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Ut matt scelerisque tortor. Sed vulputate, metus...</a>
+          <br />
+          <a href="#">See All</a>
+        </div>
+        <div class="col-xs-3">
+          <span class="new-line bold">Applications</span>
+          <a href="#" class="new-line">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Ut matt scelerisque tortor. Sed vulputate, metus...</a>
+          <br />
+          <a href="#">See All</a>
+        </div>
+        <div class="col-xs-3">
+          <span class="new-line bold">Latest News</span>
+          <a href="#" class="new-line">Lorem ipsum dolor sit amet consectetuer adipiscing elit. Ut matt scelerisque tortor. Sed vulputate, metus...</a>
+          <br />
+          <a href="#">See All</a>
+        </div>
+        <div class="col-xs-3">
+          <span class="new-line bold">Featured Video</span>
+          <iframe width="210" height="128" src="//www.youtube.com/embed/BImjqCcGTEU" frameborder="0" allowfullscreen></iframe>
+        </div>
+      </div>
+    </div>
+  </div>
+  <div class="footer3 container">
+    <div class="pull-right">
+      <ul class="footer-links">
+        <li><a href="#">Website Help</a></li>
+        <li>|</li>
+        <li><a href="#">Policies</a></li>
+        <li>|</li>
+        <li><a href="#">@Copyright 2014</a></li>
+      </ul>
+    </div>
+	</div>
+  <script src="js/jquery-1.11.0.min.js"></script>
+  <script src="js/jquery.plugin.min.js"></script>
+  <script src="js/bootstrap.min.js"></script>
+  <script src="js/bootstrap-datepicker.js"></script>
+  <script src="js/jquery.countdown.min.js"></script>
+  <script src="js/jquery-ui-1.10.4.custom.min.js"></script>
+  <script src="js/plugins.js"></script>
+  <script src="js/script.js"></script>
+  <script src="js/home.js"></script>
+</body>
+</html>
